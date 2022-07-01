@@ -8,7 +8,7 @@ public class Reservation {
     private Integer roomNumber;
     private Date checkin;
     private Date checkout;
-    private final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Long duration() {
         long diff = checkout.getTime() - checkin.getTime();
